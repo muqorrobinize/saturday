@@ -2,7 +2,8 @@
 name = "saturday"
 
 # The entry point for your Worker's code.
-main = "src/index.ts"
+# Changed from "src/index.ts" to "index.ts" to match your file structure.
+main = "index.ts"
 
 # Specifies compatibility with a recent version of the Workers runtime.
 compatibility_date = "2024-07-18"
