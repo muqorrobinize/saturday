@@ -1,4 +1,4 @@
-# The name of your Worker. This will be part of its URL (saturday.mqrbxn.dev).
+# The name of your Worker. This will be part of its URL.
 name = "saturday"
 
 # The entry point for your Worker's code.
@@ -7,7 +7,8 @@ main = "src/index.ts"
 # Specifies compatibility with a recent version of the Workers runtime.
 compatibility_date = "2024-07-18"
 
-# This crucial part links your code to the Cloudflare AI service.
-# In the dashboard, this is done in Settings > Variables > AI Bindings.
-[[ai]]
+# This is the corrected AI binding.
+# We use [ai] (a single bracket) to define it as a single object,
+# not [[ai]] which creates an array.
+[ai]
 binding = "AI"
